@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {
     "setup": "npm ci && npm --prefix homepage ci",
-    "dev": "node scripts/serve-site.mjs",
-    "dev:docs": "vitepress dev",
-    "dev:homepage": "npm --prefix homepage run dev",
+    "dev": "node api.js && node scripts/serve-site.mjs",
+    "dev:docs": "node api.js && vitepress dev",
+    "dev:homepage": "node api.js && npm --prefix homepage run dev",
     "build": "node scripts/build-site.mjs",
     "build:docs": "vitepress build",
     "build:homepage": "npm --prefix homepage run build",

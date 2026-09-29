@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node api.js && next dev",
     "build": "next build",
     "lint": "eslint",
     "audit:content": "node scripts/audit-content.mjs"
